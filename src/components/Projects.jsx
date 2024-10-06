@@ -8,9 +8,8 @@ const Projects = () => {
         <h1>PROJECTS</h1>
         <div className="row d-flex justify-content-center align-content-center">
           {project.map((data) => (
-            <>
+            <div key={data.id}>
               <div
-                key={data.id}
                 className="my-4 col-sm-6 col-md-4 col-lg-3 mx-4"
               >
                 <div
@@ -48,7 +47,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
